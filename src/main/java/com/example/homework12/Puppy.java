@@ -48,4 +48,14 @@ public class Puppy implements Animal {
     public void AnimalMinus() {
         System.out.println("Вечно лает");
     }
+
+    @Override
+    public String toString() {
+        return "Puppy{" +
+                "name='" + name + '\'' +
+                ", poroda='" + poroda + '\'' +
+                ", colour='" + colour + '\'' +
+                ", food='" + food + '\'' +
+                '}';
+    }
 }

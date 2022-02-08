@@ -1,9 +1,9 @@
 package com.example.homework12;
 
 public class Person {
-     private Animal animal;
      private String name;
-     private int age;
+    private int age;
+    private Animal animal;
 
 
 
@@ -37,5 +37,13 @@ public class Person {
     public void CallMethodsOfKitten(){
         animal.AnimalPLus();
         animal.AnimalMinus();
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+        " animal " + animal +"}";
     }
 }
